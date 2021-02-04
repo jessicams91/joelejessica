@@ -1,6 +1,7 @@
 <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page" role="navigation">
   <div class="navbar-header">
     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    <a class="navbar-brand" href="<%= root_path %>">J &amp; J</a>
   </div>
   <div class="container">
     <div class="collapse navbar-collapse" id="custom-collapse">
@@ -8,9 +9,9 @@
         <li><a href="#totop">Apresentação</a></li>
         <li><a class="section-scroll" href="#information">Informações</a></li>
         <li><a class="section-scroll" href="#event">Evento</a></li>
-        <li><a class="section-scroll" href="#giftlist">Lista de Presentes</a></li>
         <li><a class="section-scroll" href="#accomodation">Alojamentos</a></li>
         <li><a class="section-scroll" href="#hints">Dicas</a></li>
+        <li><a class="section-scroll" href="<%= products_path %>">Lista de Presentes</a></li>
         <li><a class="section-scroll" href="<%= menu_path %>">Cardápio</a></li>
       </ul>
     </div>
@@ -47,17 +48,6 @@
     </div>
   </section>
   <hr class="divider-w">
-  <section class="module" id="giftlist">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h2 class="module-title font-alt">Lista de Presentes</h2>
-          <div class="module-subtitle font-serif titan-title-size-1">Mais informações em breve!</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <hr class="divider-w">
   <section class="module" id="accomodation">
     <div class="container">
       <div class="row">
@@ -74,6 +64,17 @@
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
           <div role="tabpanel"><ul class="nav nav-tabs font-alt" role="tablist"><li class="active"><a href="#support" data-toggle="tab"><span class="icon-tools-2"></span>support</a></li><li><a href="#sales" data-toggle="tab"><span class="icon-tools-2"></span>sales</a></li></ul><div class="tab-content"><div class="tab-pane active" id="support">The European languages are members of the same family. Their separate existence is a myth.</div><div class="tab-pane" id="sales">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="divider-w">
+  <section class="module" id="giftlist">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="module-title font-alt">Lista de Presentes</h2>
+          <div class="module-subtitle font-serif titan-title-size-1">Mais informações em breve!</div>
         </div>
       </div>
     </div>
