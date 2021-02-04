@@ -11,8 +11,8 @@
         <li><a class="section-scroll" href="#event">Evento</a></li>
         <li><a class="section-scroll" href="#accomodation">Alojamentos</a></li>
         <li><a class="section-scroll" href="#hints">Dicas</a></li>
-        <li><a class="section-scroll" href="<%= products_path %>">Lista de Presentes</a></li>
-        <li><a class="section-scroll" href="<%= menu_path %>">Cardápio</a></li>
+        <li><a class="section-scroll" href="/presentes">Lista de Presentes</a></li>
+        <li><a class="section-scroll" href="/cardapio">Cardápio</a></li>
       </ul>
     </div>
   </div>
@@ -63,7 +63,20 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
-          <div role="tabpanel"><ul class="nav nav-tabs font-alt" role="tablist"><li class="active"><a href="#support" data-toggle="tab"><span class="icon-tools-2"></span>support</a></li><li><a href="#sales" data-toggle="tab"><span class="icon-tools-2"></span>sales</a></li></ul><div class="tab-content"><div class="tab-pane active" id="support">The European languages are members of the same family. Their separate existence is a myth.</div><div class="tab-pane" id="sales">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</div></div></div>
+          <div role="tabpanel">
+            <ul class="nav nav-tabs font-alt" role="tablist">
+              <li class="active">
+                <a href="#clothes" data-toggle="tab"><span class="icon-tshirt"></span>Vestimenta</a>
+              </li>
+              <li>
+                <a href="#shoes" data-toggle="tab"><span class="icon-boot"></span>Calçados</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="clothes"></div>
+              <div class="tab-pane" id="shoes"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
