@@ -1,0 +1,36 @@
+<%= render :partial => "layouts/nav" %>
+<section class="module">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table table-striped table-border checkout-table">
+          <tbody>
+            <tr>
+              <th style="width: 20%;">Presente</th>
+              <th style="width: 5%;">Valor</th>
+              <th style="width: 15%;">Comprador</th>
+              <th style="width: 25%;">Mensagem</th>
+              <th style="width: 5%;">Conferido</th>
+              <th style="width: 10%;"></th>
+            </tr>
+            <% Purchase.order(:created_at).each do |purchase| %>
+              <tr>
+                <td><%= purchase.gift.name %></td>
+                <td><%= purchase.gift.price * purchase.quotas %></td>
+                <td><%= purchase.buyer %></td>
+                <td><%= purchase.message %></td>
+                <td><%= purchase.status %></td>
+                <td>
+                  <% if !purchase.status %>
+                    <a href="/checked?id=<%= purchase.id %>" class="btn btn-success btn-circle" type="submit">Conferido</a>
+                    <br><br>
+                    <a href="/canceled?id=<%= purchase.id %>"class="btn btn-danger btn-circle" type="submit">Cancelar</a>
+                  <% end %>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

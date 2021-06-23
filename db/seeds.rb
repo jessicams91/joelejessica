@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Gift.create(name: "DisneySea", description: "Parque temático da Disney exclusivo do Japão com temática aquática", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 350, remaining_quota: 2)
+Gift.create(name: "Passeio de Barco Krabi", description: "Passeio pelas 4 Ilhas de Krabi", country: "Tailândia", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 240, remaining_quota: 2)
+Gift.create(name: "Passeio de Barco Phi Phi", description: "Passeio pelas Ilha de PhiPhi", country: "Tailândia", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 170, remaining_quota: 2)
+Gift.create(name: "Santuário de Elefantes", description: "Dia com passeio para conhecer, alimentar e dar banho em elefantes", country: "Tailândia", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 200, remaining_quota: 2)
+Gift.create(name: "Parque Naruto", description: "Parque temático do universo de Naruto", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 140, remaining_quota: 2)
+Gift.create(name: "Universal Studios Japan", description: "Parque temático da Universal incluindo o Super Mario World", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 325, remaining_quota: 2)
+Gift.create(name: "Jantar de Sushi especial", description: "Jantar em Restaurante com 1 estrela Michelin", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 200, remaining_quota: 2)
+Gift.create(name: "Nagashima Spa Land", description: "Maior parque temático do Japão com a montanha russa mais longa do mundo", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 230, remaining_quota: 2)
+Gift.create(name: "Fuji Q", description: "Parque temático aos pés do monte Fuji com 3 montanhas russas do Guinness", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 220, remaining_quota: 2)
+Gift.create(name: "Almoço Pokémon Café", description: "Almoço temático no Pokemon Café", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 125, remaining_quota: 2)
+Gift.create(name: "Nabana no Sato", description: "Jantar e visita a parque com show de luzes e repleto de flores", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 180, remaining_quota: 2)
+Gift.create(name: "Diária Hotel na Floresta", description: "2 Diárias em uma casa da árvore na floresta", country: "Tailândia", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 125, remaining_quota: 4)
+Gift.create(name: "Passeio Parque Khao Sok", description: "Passeio de 1 dia pelo lago com pernoite nos chalés rústicos", country: "Tailândia", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 370, remaining_quota: 2)
+Gift.create(name: "Massagem Tailandesa", description: "45 minutos de massagem para casal", country: "Tailândia", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 75, remaining_quota: 2)
+Gift.create(name: "2 Diárias em Resort de Luxo", description: "Resort Luxuoso e reservado em Koh Yao", country: "Tailândia", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 97, remaining_quota: 8)
+Gift.create(name: "Almoço de Kobe Beef", description: "Almoço especial em restaurante em Kobe", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 145, remaining_quota: 2)
+Gift.create(name: "Vilarejo Shirakawa-Go", description: "Passeio de meio dia pelo vilarejo de Shirakawa-Go", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 200, remaining_quota: 2)
+Gift.create(name: "Experiência de Kimono", description: "Aluguel de 1 dia de kimonos", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 150, remaining_quota: 2)
+Gift.create(name: "Diária em Ryokan", description: "Diária em hotel tradicional japonês com águas termais", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 185, remaining_quota: 2)
+Gift.create(name: "Diária em Templo", description: "Diária em templo budista com café e jantar vegetariano na montanha de Koya", country: "Japão", picture: "https://res.cloudinary.com/dt7akujlg/image/upload/v1624430272/elephant_erehv6.png", price: 204, remaining_quota: 4)

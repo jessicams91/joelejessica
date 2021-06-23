@@ -1,0 +1,31 @@
+<%= render :partial => "layouts/nav" %>
+<section class="module bg-dark-60 shop-page-header" data-background="assets/images/shop/product-page-bg.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h1 class="module-title font-alt">Lista de Presentes<br><br>Cotas de Lua de Mel</h1>
+        <div class="module-subtitle font-serif"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="divider-w">
+<section class="module-small">
+  <div class="container">
+    <div class="row multi-columns-row">
+      <% Gift.ativos.order(:price).each do |gift| %>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="shop-item" style="height:440px">
+          <h6 class="font-alt"><%= gift.country %></h6>
+          <h5 class="font-alt"><b><%= gift.name %></b></h5>
+          <div class="shop-item-image"><img src=<%= gift.picture %>>
+            <div class="shop-item-detail"><a href=<%= "comprar?id=#{gift.id}" %> class="btn btn-round btn-b"><span class="icon-basket">Comprar</span></a></div>
+          </div>
+          <h5 class="font-serif"><%= gift.description%><br><br><b>R$<%= gift.price %> / cota</b><br>Restam <%= gift.remaining_quota %> cotas</h5>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+</hr>

@@ -1,0 +1,108 @@
+<%= render :partial => "layouts/nav" %>
+<section class="module">
+  <form method="POST" action="/finalizar">
+    <input class="form-control hidden" name="id" type="number" value=<%= @gift.id %>>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h1 class="module-title font-alt">Agradecemos pelo presente!</h1>
+      </div>
+    </div>
+    <hr class="divider-w pt-20">
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table font-alt table-striped table-border checkout-table">
+          <tbody>
+            <tr>
+              <th style="width: 50%;" colspan="2">Presente</th>
+              <th class="hidden-xs" style="width: 10%;">Preço</th>
+              <th style="width: 10%;">Quantidade</th>
+              <th style="width: 10%;">Total</th>
+            </tr>
+            <tr>
+              <td style="width: 15%;"><a href="#"><img src=<%= @gift.picture %>></a></td>
+              <td>
+                <h5 class="product-title font-alt"><%= @gift.name %></h5>
+              </td>
+              <td class="hidden-xs">
+                <h5 class="product-title font-alt">R$<%= @gift.price %></h5>
+                <input class="form-control price hidden" type="number" value=<%= @gift.price %>>
+              </td>
+              <td>
+                <input required class="form-control quantity" name="quantity" type="number" value="1" max=<%= @gift.remaining_quota %> min="1"/>
+              </td>
+              <td>
+                <h5 class="product-title total font-alt">R$<%= @gift.price %></h5>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr class="divider-w">
+    <div class="row mt-70">
+      <div class="col-sm-6">
+        <div class="shop-Cart-totalbox">
+          <h4 class="font-alt">Por favor deixe sua mensagem!</h4>
+          <table class="table table-striped table-border checkout-table font-alt">
+            <tbody>
+              <tr>
+                <th style="width:25%">Nome(s):</th>
+                <td><input required class="form-control name" name="buyer" type="text"></td>
+              </tr>
+              <tr>
+                <th style="width:25%">Mensagem:</th>
+                <td><textarea required class="form-control message" name="message" type="text" rows="19"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="font-alt btn btn-lg btn-block btn-round btn-d" type="submit">Já Paguei!</button>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="shop-Cart-totalbox">
+          <h4 class="font-alt">Informações de Pagamento</h4>
+          <table class="table table-striped table-border checkout-table font-alt">
+            <tbody>
+              <tr>
+                <th style="width:30%">Chave:</th>
+                <td>40962984841</td>
+              </tr>
+              <tr>
+                <th>Banco:</th>
+                <td>260 - Nu Pagamentos S.A.</td>
+              </tr>
+              <tr>
+                <th>Nome:</th>
+                <td>Jessica Moura de Sousa</td>
+              </tr>
+              <tr>
+                <th>Agencia:</th>
+                <td>0001</td>
+              </tr>
+              <tr>
+                <th>Conta:</th>
+                <td>8729074-7</td>
+              </tr>
+              <tr>
+                <th>QR Code:</th>
+                <td><img style= "width:58%;align-items:center" src="assets/images/shop/pix.jpeg"/></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</section>
+<script type="text/javascript">
+
+  $(document).on("change", ".quantity", function() {
+    var quantity = $(".quantity").val();
+    var price = $(".price").val();
+    var total = quantity * price;
+  	$(".total").html("R$"+total);
+  });
+
+</script>
