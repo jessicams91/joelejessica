@@ -11,27 +11,27 @@
     <hr class="divider-w pt-20">
     <div class="row">
       <div class="col-sm-12">
+        <img class="hidden-lg" src=<%= @gift.picture %>>
+          <p></p>
+        </img>
         <table class="table font-alt table-striped table-border checkout-table">
           <tbody>
             <tr>
-              <th style="width: 50%;" colspan="2">Presente</th>
-              <th class="hidden-xs" style="width: 10%;">Preço</th>
+              <th class="hidden-xs" style="width: 80%;" colspan="2">Presente</th>
+              <th class="hidden-lg" style="width: 80%;">Presente</th>
               <th style="width: 10%;">Quantidade</th>
               <th style="width: 10%;">Total</th>
             </tr>
             <tr>
-              <td style="width: 15%;"><a href="#"><img src=<%= @gift.picture %>></a></td>
+              <td style="width: 25%;" class="hidden-xs"><a href="#"><img src=<%= @gift.picture %>></a></td>
               <td>
                 <h5 class="product-title font-alt"><%= @gift.name %></h5>
-              </td>
-              <td class="hidden-xs">
-                <h5 class="product-title font-alt">R$<%= @gift.price %></h5>
-                <input class="form-control price hidden" type="number" value=<%= @gift.price %>>
               </td>
               <td>
                 <input required class="form-control quantity" name="quantity" type="number" value="1" max=<%= @gift.remaining_quota %> min="1"/>
               </td>
               <td>
+                <input class="form-control price hidden" type="number" value=<%= @gift.price %>>
                 <h5 class="product-title total font-alt">R$<%= @gift.price %></h5>
               </td>
             </tr>
