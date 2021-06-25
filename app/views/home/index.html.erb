@@ -9,9 +9,9 @@
         <li><a href="#totop">Abertura</a></li>
         <li><a class="section-scroll" href="#information">Informações</a></li>
         <li><a class="section-scroll" href="#event">Evento</a></li>
-        <!-- <li><a class="section-scroll" href="#accomodation">Alojamentos</a></li> -->
-        <!-- <li><a class="section-scroll" href="#hints">Dicas</a></li> -->
         <li><a class="section-scroll" href="/presentes">Lista de Presentes</a></li>
+        <li><a class="section-scroll" href="#hints">Dicas</a></li>
+        <!-- <li><a class="section-scroll" href="#accomodation">Alojamentos</a></li> -->
         <!-- <li><a class="section-scroll" href="/cardapio">Cardápio</a></li> -->
       </ul>
     </div>
@@ -25,8 +25,18 @@
     </div>
   </div>
 </section>
-<div class="main">
-  <section class="module pb-0" id="information">
+<section class="module-small bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-4">
+        <div class="font-alt">
+          <h2>Faltam <%= ("02/10/2021".to_date - Date.today).to_i %> dias!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="module pb-0" id="information" style="margin-top:-70px;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -55,20 +65,84 @@
       </div>
     </hr>
     <hr class="divider-w">
-    <section class="module" id="giftlist">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <h2 class="module-title font-alt">Lista de Presentes</h2>
-            <div class="module-subtitle font-serif titan-title-size-2">Confira nossa lista de cotas de lua de mel!</div>
-            <a href="/presentes"><img src="https://res.cloudinary.com/dt7akujlg/image/upload/v1612465219/IMG-20210204-WA0010_othdbo.jpg"></img></a>
+    <section id="giftlist" style="margin-top:50px;margin-bottom:50px">
+      <div class="row">
+        <h2 class="module-title font-alt">Lista de Presentes</h2>
+        <div class="module-subtitle font-serif titan-title-size-2">Confira nossa lista de cotas de lua de mel!</div>
+        <div class="col-md-8 col-sm-4 col-xs-8 col-sm-offset-2" style="align-itens">
+          <div class="hero-slider">
+            <ul class="slides">
+              <li class="bg-dark-30 bg-dark" style="background-image: url('https://res.cloudinary.com/dt7akujlg/image/upload/v1624588868/00206964_u1dhth.jpg'); width: 100%; float: left; opacity: 0; display: block; z-index: 1;" data-thumb-alt="">
+                <a href="/presentes">
+                  <div class="titan-caption" style="top: 0px;height:300px">
+                    <div class="caption-content">
+                      <div class="font-alt module-title">Clique Aqui!</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="bg-dark-30 bg-dark flex-active-slide" style="background-image: url('https://res.cloudinary.com/dt7akujlg/image/upload/v1624588868/passagens-aereas-promocionais-executiva-ethiopian-airlines-bangkok-tailandia-asia-voe-simples-promocoes-sdppart1_ppfh8j.jpg'); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;" data-thumb-alt="">
+                <a href="/presentes">
+                  <div class="titan-caption" style="top: 0px;height:300px">
+                    <div class="caption-content">
+                      <div class="font-alt module-title">Clique Aqui!</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
+    <hr class="divider-w">
+    <section class="module" id="hints" style="margin-top:-70px;margin-bottom:-140px">
+      <div class="container">
+          <div class="col-sm-12">
+            <h2 class="module-title font-alt">Dicas</h2>
+            <div role="tabpanel" style="margin-top:-50px">
+              <ul class="nav nav-tabs font-alt titan-title-size-2" role="tablist">
+                <li class="active">
+                  <a href="#clothes" data-toggle="tab">Vestimenta</a>
+                </li>
+                <!-- <li>
+                  <a href="#hotels" data-toggle="tab">Hotéis</a>
+                </li>
+                <li>
+                  <a href="#karaoke" data-toggle="tab">Karaokê</a>
+                </li> -->
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="clothes">
+                  <h6 class="module-subtitle font-serif titan-title-size-2">
+                    Para nossa celebração, escolhemos o estilo de vestimenta <b>Esporte</b>, seguem algumas dicas:
+                    <br><br>
+                    A regra aqui é investir na roupa do cotidiano, como a tradicional calça jeans, camisa polo, sapato casual e suéter. De um modo geral, esse tipo de traje é para eventos que ocorrem durante o dia, permitindo o uso de peças curtas e leves, como bermudas e saias.
+                    <br><br>
+                    <b>Para os homens</b>, uma boa opção para compor um vestuário esporte é a calça de sarja combinada com uma camisa de tecido ou polo. Se estiver frio, um suéter ou blazer cai bem. Nos pés, opte pelos chamados sapatênis ou por sapatos casuais, como tênis não esportivos. Se estiver bem calor, uma bermuda de sarja pode ser usada com uma camiseta lisa.
+                    <br><br>
+                    <b>No caso das mulheres</b>, vestidos leves, com cores claras ou com estampas floridas, são apostas certeiras. Macacões, calças lisas ou estampadas e bermudas também podem ser boas opções. Acessórios devem ser discretos, assim como a maquiagem.
+                    <br><br>
+                    Peças com muito brilho, decotes profundos e saltos muito finos e altos devem ser evitados para manter uma aparência mais fresca e leve, por ser uma celebração ao ar livre.
+                    <p></p>
+                    <img src="https://res.cloudinary.com/dt7akujlg/image/upload/v1624479869/screenshot-www.canva.com-2021.06.23-17_23_38_bdffb4.png">
+                    <img src="https://guiafeminina.com.br/wp-content/uploads/2016/06/Untitqewred-3-412x274.png">
+                    <img src="https://res.cloudinary.com/dt7akujlg/image/upload/v1624479508/esporte_masculino_oohsel.png">
+                </h6>
+                </div>
+                <div class="tab-pane" id="hotels">
+
+                </div>
+                <div class="tab-pane" id="karaoke">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
     </hr>
     <hr class="divider-w">
-    <section class="module pb-0" id="information">
+    <section class="module pb-0" id="information" style="margin-top:-70px">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -81,7 +155,6 @@
       </div>
     </section>
     </hr>
-</div>
   <!-- <hr class="divider-w">
   <section class="module" id="accomodation">
     <div class="container">
@@ -89,29 +162,6 @@
         <div class="col-sm-6 col-sm-offset-3">
           <h2 class="module-title font-alt">Alojamentos</h2>
           <div class="module-subtitle font-serif titan-title-size-1">Mais informações em breve!</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <hr class="divider-w">
-  <section class="module" id="hints">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <div role="tabpanel">
-            <ul class="nav nav-tabs font-alt" role="tablist">
-              <li class="active">
-                <a href="#clothes" data-toggle="tab">Vestimenta</a>
-              </li>
-              <li>
-                <a href="#shoes" data-toggle="tab">Calçados</a>
-              </li>
-            </ul>
-            <div class="tab-content">
-              <div class="tab-pane active" id="clothes"></div>
-              <div class="tab-pane" id="shoes"></div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
