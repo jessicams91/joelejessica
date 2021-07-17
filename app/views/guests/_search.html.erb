@@ -26,13 +26,13 @@
 <% end %>
 <script>
 $(document).ready(function() {
-  <% if @guest.friday %>
+  <% if @guest && @guest.friday %>
     $('#friday').attr('checked','checked');
   <% end %>
-  <% if @guest.sunday %>
+  <% if @guest && @guest.sunday %>
     $('#sunday').attr('checked','checked');
   <% end %>
-  <% if @guest.crepe %>
+  <% if @guest && @guest.crepe %>
     $('#crepe').attr('checked','checked');
   <% end %>
 });
