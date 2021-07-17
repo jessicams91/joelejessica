@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   get 'purchases' => 'purchases#index'
   get 'checked' => 'purchases#checked'
   get 'canceled' => 'purchases#canceled'
+  get 'guest_search' => 'guests#search'
+  post 'confirmation' => 'guests#update'
+  get "guests/update"
 end

@@ -13,6 +13,7 @@ class GiftsController < ApplicationController
     gift = Gift.find(params[:id])
     gift.remaining_quota -= params[:quantity].to_i
     gift.save
+    flash[:success] = 'Agradecemos pelo presente!'
     redirect_to action:'index'
   end
 end

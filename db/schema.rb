@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210618012400) do
+ActiveRecord::Schema.define(version: 20210706205503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,20 @@ ActiveRecord::Schema.define(version: 20210618012400) do
     t.integer  "remaining_quota"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "guests", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "lodging"
+    t.integer  "guests"
+    t.boolean  "friday"
+    t.boolean  "crepe"
+    t.boolean  "sunday"
+    t.string   "observation"
+    t.string   "hair_makeup"
+    t.string   "full_names"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "purchases", force: :cascade do |t|

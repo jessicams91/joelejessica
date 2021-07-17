@@ -19,7 +19,7 @@
     <meta property="og:site_name" content="Joel e Jessica 02/10/2021">
     <meta property="og:title" content="Casamento Joel e Jessica">
     <meta property="og:description" content="Save the date 02/10/2021">
-    <meta property="og:image" itemprop="image" content="https://res.cloudinary.com/dt7akujlg/image/upload/v1612465219/IMG-20210204-WA0010_othdbo.jpg">
+    <meta property="og:image" itemprop="image" content="https://res.cloudinary.com/dt7akujlg/image/upload/v1626481103/FB_IMG_1626481053654_no7bil.jpg">
     <meta property="og:type" content="website">
     <!--
     Stylesheets
@@ -44,11 +44,15 @@
     <!-- Main stylesheet and color file-->
     <link href="./assets/css/style.css?version=2" rel="stylesheet">
     <link id="color-scheme" href="./assets/css/colors/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" />
     <!--
     JavaScripts
     =============================================
     -->
     <script src="/assets/lib/jquery/dist/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/assets/lib/wow/dist/wow.js"></script>
     <script src="/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
@@ -61,6 +65,9 @@
     <script src="/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="/assets/js/plugins.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js">
+  </script>
+
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" >
     <main>
@@ -85,3 +92,16 @@
   </body>
 
 </html>
+<script>
+  <% if flash[:success] %>
+  toastr.success("<%= escape_javascript flash[:success] %>");
+  <% end %>
+
+  <% if flash[:warning] %>
+  toastr.warning("<%= escape_javascript flash[:warning] %>");
+  <% end %>
+
+  <% if flash[:error] %>
+  toastr.error("<%= escape_javascript flash[:error] %>");
+  <% end %>
+</script>
