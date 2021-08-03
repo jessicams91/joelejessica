@@ -1,10 +1,10 @@
 <%= render :partial => "layouts/nav" %>
 <section class="module">
   <div class="container">
-    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Confirmados</h3><%= Guest.where("full_names is not NULL").count %></div>
-    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Sexta</h3><%= Guest.where(friday: true).count %></div>
-    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Domingo</h3><%= Guest.where(sunday: true).count %></div>
-    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Crepe</h3><%= Guest.where(crepe: true).count %></div>
+    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Confirmados</h3><%= @guests %></div>
+    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Sexta</h3><%= @friday %></div>
+    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Domingo</h3><%= @sunday %></div>
+    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Crepe</h3><%= @crepe %></div>
       <div class="col-sm-12">
         <table class="table table-striped table-border checkout-table"  style="margin-top:20px">
           <tbody>

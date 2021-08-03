@@ -1,6 +1,13 @@
 class GuestsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
+  def index
+    @crepe = Guest.where(crepe: true).sum(:guests)
+    @friday = Guest.where(friday: true).sum(:guests)
+    @sunday = Guest.where(sunday: true).sum(:guests)
+    @guests = Guest.where("full_names is not NULL").sum(:guests)
+  end
+
   def search
     @guest = Guest.all.select{|g| g.name.delete(' ') == params[:name]}.first
     render partial: "search"
