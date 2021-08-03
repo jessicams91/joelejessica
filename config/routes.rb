@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   get 'canceled' => 'purchases#canceled'
   get 'guest_search' => 'guests#search'
   post 'confirmation' => 'guests#update'
-  get "guests/update"
+  get 'guests' => 'guests#index'
 end
