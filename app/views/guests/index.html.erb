@@ -10,6 +10,7 @@
           <tbody>
             <tr>
               <th>Convite</th>
+              <th>Qtd.</th>
               <th>Brindes</th>
               <th>Restrição</th>
               <th>Sexta</th>
@@ -20,6 +21,7 @@
             <% Guest.confirmados.order(:updated_at).each do |guest| %>
               <tr>
                 <td><%= guest.name %></td>
+                <td><%= guest.guests %></td>
                 <td><%= guest.full_names %></td>
                 <td><%= guest.observation %></td>
                 <td><%= "X" if guest.friday %></td>
