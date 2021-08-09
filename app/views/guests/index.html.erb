@@ -9,14 +9,14 @@
         <table class="table table-striped table-border checkout-table"  style="margin-top:20px">
           <tbody>
             <tr>
-              <th>Convite</th>
-              <th>Qtd.</th>
-              <th>Brindes</th>
-              <th>Restrição</th>
-              <th>Sexta</th>
-              <th>Domingo</th>
-              <th>Crepe</th>
-              <th>Cabelo/Maquiagem</th>
+              <th style="width: 20%;">Convite</th>
+              <th style="width: 5%;">Qtd.</th>
+              <th style="width: 20%;">Brindes</th>
+              <th style="width: 15%;">Restrição</th>
+              <th style="width: 10%;">Sexta</th>
+              <th style="width: 10%;">Domingo</th>
+              <th style="width: 10%;">Crepe</th>
+              <th style="width: 20%;">Cabelo/Maquiagem</th>
             </tr>
             <% Guest.confirmados.order(:updated_at).each do |guest| %>
               <tr>
