@@ -31,7 +31,7 @@
           <div class="shop-item-image"><img src=<%= gift.picture %>>
             <div class="shop-item-detail"><a href=<%= "comprar?id=#{gift.id}" %> class="btn btn-round btn-b"><span class="icon-basket">Comprar</span></a></div>
           </div>
-          <h5 class="font-serif"><%= gift.description%><br><br><b>R$<%= gift.price %> / cota</b><br>Restam <%= gift.remaining_quota %> cotas</h5>
+          <h5 class="font-serif"><%= gift.description%><br><br><b>R$<%= gift.price %> / cota</b><br><%= gift.remaining_quota > 1 ? "Restam #{gift.remaining_quota} cotas" : "Resta #{gift.remaining_quota} cota" %></h5>
         </div>
       </div>
       <% end %>

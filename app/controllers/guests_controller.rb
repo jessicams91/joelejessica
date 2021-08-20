@@ -5,7 +5,7 @@ class GuestsController < ApplicationController
     @crepe = Guest.where(crepe: true).sum(:guests)
     @friday = Guest.where(friday: true).sum(:guests)
     @sunday = Guest.where(sunday: true).sum(:guests)
-    @guests = Guest.where("full_names is not NULL").sum(:guests)
+    @guests = Guest.where("guests is not NULL").sum(:guests)
   end
 
   def search

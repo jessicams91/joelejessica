@@ -2,21 +2,21 @@
 <section class="module">
   <div class="container">
     <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Confirmados</h3><%= @guests %></div>
-    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Sexta</h3><%= @friday %></div>
-    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Domingo</h3><%= @sunday %></div>
+    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Sexta/Sábado</h3><%= @friday %></div>
+    <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Sábado/Domingo</h3><%= @sunday %></div>
     <div class="col-sm-3 text-center"><h3 class="alt-features-title font-alt">Crepe</h3><%= @crepe %></div>
       <div class="col-sm-12">
         <table class="table table-striped table-border checkout-table"  style="margin-top:20px">
           <tbody>
             <tr>
-              <th>Convite</th>
-              <th>No</th>
-              <th>Brindes</th>
-              <th>Restrição</th>
-              <th>Sexta</th>
-              <th>Domingo</th>
-              <th>Crepe</th>
-              <th>Cabelo/Maquiagem</th>
+              <th style="width: 20%;">Convite</th>
+              <th style="width: 5%;">Qtd.</th>
+              <th style="width: 20%;">Brindes</th>
+              <th style="width: 15%;">Restrição</th>
+              <th style="width: 10%;">Sexta/Sábado</th>
+              <th style="width: 10%;">Sábado/Domingo</th>
+              <th style="width: 10%;">Crepe</th>
+              <th style="width: 20%;">Cabelo/Maquiagem</th>
             </tr>
             <% Guest.confirmados.order(:updated_at).each do |guest| %>
               <tr>

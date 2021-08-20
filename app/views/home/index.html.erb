@@ -13,7 +13,6 @@
         <li><a class="section-scroll text-center" href="/presentes">Lista de <br>Presentes</a></li>
         <li><a class="section-scroll text-center" href="#clothes">Vestimenta</a></li>
         <li><a class="section-scroll text-center" href="#entertainment">Entretenimento</a></li>
-        <!-- <li><a class="section-scroll" href="/cardapio">Cardápio</a></li> -->
       </ul>
     </div>
   </div>
@@ -37,6 +36,9 @@
     </div>
   </div>
 </section>
+<% if Date.today >= "24/09/2021".to_date %>
+<a class="weatherwidget-io" href="https://forecast7.com/pt/n23d53n47d14/sao-roque/" data-label_1="SÃO ROQUE" data-label_2="SP" data-theme="pure">SÃO ROQUE SP</a>
+<% end %>
 <section class="module pb-0" id="information" style="margin-top:-70px;">
     <div class="container">
       <div class="row">
@@ -44,7 +46,7 @@
           <h2 class="module-title font-alt">Bem-vindos!</h2>
           <h2 class="module-subtitle font-serif titan-title-size-2">Para alívio de nossas mães, que já não viam a hora de sairmos de nossas casas, chegou o grande dia de unirmos o nosso amor!
           <p><div class="features-icon"><span class="icon-heart"></span></div></p>
-          Aproveitem alguns minutos no nosso site, nele poderá encontrar informações do casamento, lista com sugestões de presentes e muito mais!! Contamos com a presença de todos para que o nosso dia seja ainda mais especial!
+          Aproveitem alguns minutos no nosso site, nele poderá encontrar informações do casamento, lista de presentes e muito mais!! Contamos com a presença de todos para que o nosso dia seja ainda mais especial!
           </h2>
         </div>
       </div>
@@ -57,7 +59,7 @@
           <div class="row position-relative m-0"><div class="col-xs-12 col-md-6 side-image" data-background="https://res.cloudinary.com/dt7akujlg/image/upload/v1625443172/121573443_1289521714740810_1489921666030528069_n_upm7an.jpg" style="background-image: url(&quot;assets/images/section-14.jpg&quot;);"></div><div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
               <div class="row multi-columns-row" style="margin-top:-100px">
                 <div class="col-md-12 col-sm-6 col-xs-12"><div class="features-item"><h3 class="features-title font-alt large-text">Eventos</h3><p class="features-title font-alt">A cerimônia e a festa serão no mesmo local, na Chácara Gido Ibrahim.<br><br>Estrada Emil Scaff, 122, São Roque - SP</p><p class="features-title font-alt"><a href="http://gido.com.br/">Clique para mais informações</a></p></div></div>
-                <div class="col-md-12 col-sm-6 col-xs-12" style="margin-bottom:-100px"><div class="features-item"><div class="features-icon"><span class="icon-clock"></span></div><h3 class="features-title font-alt large-text">Cronograma</h3><p class="features-title font-alt">17:00 Cerimônia<br>18:00 Entradas<br>20:00 Jantar<br>00:00 Encerramento</p></div></div>
+                <div class="col-md-12 col-sm-6 col-xs-12" style="margin-bottom:-100px"><div class="features-item"><div class="features-icon"><span class="icon-clock"></span></div><h3 class="features-title font-alt large-text">Cronograma</h3><p class="features-title font-alt">17:00 Cerimônia<br>18:00 Recepção<br>20:00 Jantar<br>00:00 Encerramento</p></div></div>
               </div>
             </div>
           </div>
@@ -70,7 +72,7 @@
                   <div class="shop-item-image"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/294507518.jpg?k=220df9dcf903105a25019f818e0de985eed005a716e74f1ff9be5190cbfbf024&o=&hp=1">
                     <div class="shop-item-detail"><a href="https://www.booking.com/hotel/br/quartinho-em-rancho-rural.pt-br.html?label=gen173nr-1FCAsoIEIZcXVhcnRpbmhvLWVtLXJhbmNoby1ydXJhbEgtWARoIIgBAZgBLbgBGcgBDNgBAegBAfgBAogCAagCA7gC3u2ShwbAAgHSAiRiMjQzMmYyNS00NWM4LTRkNmYtYTU0MC1mZjM5MmRmNTIxYjDYAgXgAgE;sid=cd665372d70f7794aab4f0d31125fc5a;all_sr_blocks=698816502_327665556_2_41_0;checkin=2021-10-02;checkout=2021-10-03;dest_id=-671824;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=698816502_327665556_2_41_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=698816502_327665556_2_41_0__11140;srepoch=1625601778;srpvid=e26e8cf85c9e014d;type=total;ucfs=1&#map_closed" class="btn btn-round btn-b">Reservar</a></div>
                   </div>
-                  <h5 class="features-title font-serif">A partir de: R$111</h5>
+                  <h5 class="features-title font-serif">A partir de: R$181</h5>
                   <h5 class="features-title font-serif">Distância: 16km (20 min)</h5>
                 </div>
               </div>
@@ -81,16 +83,16 @@
                     <div class="shop-item-detail"><a href="https://www.booking.com/hotel/br/villa-maior.pt-br.html?label=gen173nr-1DCAsoIEILdmlsbGEtbWFpb3JILVgEaCCIAQGYAS24ARnIAQzYAQPoAQH4AQKIAgGoAgO4AtPvkocGwAIB0gIkZGI3YWUzODYtMmM5MC00NjEwLTgwZjMtNDM5MjdlYTk4MTkx2AIE4AIB;sid=cd665372d70f7794aab4f0d31125fc5a;all_sr_blocks=669169301_276180642_2_1_0;checkin=2021-10-02;checkout=2021-10-03;dest_id=-672116;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=669169301_276180642_2_1_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=669169301_276180642_2_1_0__22300;srepoch=1625602017;srpvid=34758d700b190234;type=total;ucfs=1&#hotelTmpl" class="btn btn-round btn-b">Reservar</a></div>
                   </div>
                   <h5 class="features-title font-serif">A partir de: R$223</h5>
-                  <h5 class="features-title font-serif">Distância: 18km ( 25min)</h5>
+                  <h5 class="features-title font-serif">Distância: 18km (25min)</h5>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-4">
                 <div class="shop-item" style="height:440px">
                   <h5 class="features-title font-alt">Chalés Marinelli</h5>
                   <div class="shop-item-image"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/288072344.jpg?k=849c5439f729a4870e966c9864c2d0e668c8bed5ade0343209df57f8c5b83602&o=&hp=1">
-                    <div class="shop-item-detail"><a href="https://www.booking.com/hotel/br/chales-marinelli.pt-br.html?aid=1726433;label=estancia-das-montanhas-C6NFA6ntMA55ZRwRJvv2tQS447276815194%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-397639651638%3Alp1001773%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YbC4OlOULAnvcrFmvh1xnqM;sid=3f9280854e813aca6799ae7ee0cee11a;all_sr_blocks=535675205_227427722_2_0_0;checkin=2021-10-02;checkout=2021-10-03;dest_id=-672116;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=535675205_227427722_2_0_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=535675205_227427722_2_0_0__41500;srepoch=1625585090;srpvid=27a36c60bc880309;type=total;ucfs=1&#hotelTmpl" class="btn btn-round btn-b">Reservar</a></div>
+                    <div class="shop-item-detail"><a href="https://www.booking.com/hotel/br/chales-marinelli.pt-br.html?aid=1726433;label=estancia-das-montanhas-C6NFA6ntMA55ZRwRJvv2tQS447276815194%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-397639651638%3Alp1001773%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YbC4OlOULAnvcrFmvh1xnqM;sid=4f42e251873a8320d5baba470dad551f;all_sr_blocks=535675205_227427722_2_0_0;checkin=2021-10-02;checkout=2021-10-03;dest_id=-672116;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=535675205_227427722_2_0_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=535675205_227427722_2_0_0__41500;srepoch=1629478745;srpvid=c5ec776c171d0135;type=total;ucfs=1&#hotelTmpl" class="btn btn-round btn-b">Reservar</a></div>
                   </div>
-                  <h5 class="features-title font-serif">A partir de: R$315</h5>
+                  <h5 class="features-title font-serif">A partir de: R$415</h5>
                   <h5 class="features-title font-serif">Distância: 2km (7 min)</h5>
                 </div>
               </div>
@@ -214,8 +216,10 @@
   </section> -->
 </div>
 <script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
 $(function() {
-  var list = ["Adauto e Família", "Alexandre e Samara", "Ana Cristine e Família", "Ana Lídia ", "Ana Meire e Família", "Ana Paula e Família", "André", "Augusto e Maria", "Cacilda e José Luis", "Camila", "Camila e Família", "Caroline", "Caroline e Christian", "Cecilia e Júlio ", "Christine e Hélio", "Claudia Gonçalves e Família", "Claudia Moura", "Cristina e Marcel", "Daisy", "Débora e Maurício", "Douglas e Familia", "Edenize e Cláudio", "Edilaneide e Família ", "Elivalda", "Emerson e Andressa", "Eric e Familia", "Fábio e Família  ", "Felipe", "Felipe e Victoria", "Fernanda", "Fernando", "Flavio e Victor", "Geórgia", "Gilberto", "Gisele", "Guilherme e Fernanda", "Heloísa e Isadora", "Hosana e Família", "Isabel", "Ivanete e Família", "Jaqueline e Família", "Joel e Familia", "Jonas e Luana", "Jonathan e Graziele", "Laura e Familia", "Leandro Dorta e Família", "Leandro Santos", "Leandro Scatamburlo e Familia", "Leonilda e Yuri", "Lourdes", "Marcelo e Família", "Marcio e Família", "Marcos Moura e Família", "Marina e Felipe", "Miriam", "Natalia e Thiago", "Nathalia", "Nitay e Ana Paula", "Patrícia", "Paula e Felipe", "Rafael e Alana", "Rafael e Giselle ", "Raimunda e Miguel", "Raisa e Família", "Renata e Cristiano", "Robinson", "Rogério", "Rosicleide e Roger", "Rosicler e Odair", "Ryan e Lais", "Simone e Jorge", "Simone Gonçalves e Família", "Socorro e Família ", "Stefani e Wendel", "Tatiana e Renato", "Thaís e Familia", "Thales e Família", "Thayssa e André", "Thiago e Fabíola ", "Thiago e Família", "Valdir e Sandra", "Vânia e Família", "Vinicius", "Vinicius e Leydjane", "Wanderlei e Família", "Wanderson e Stefani"];
+  var list = ["Adauto e Família", "Alexandre e Samara", "Ana Cristine e Família", "Ana Lídia ", "Ana Meire e Família", "Ana Paula e Família", "André", "Augusto e Maria", "Cacilda e José Luis", "Camila", "Camila e Família", "Caroline", "Caroline e Christian", "Cecilia e Júlio ", "Christine e Hélio", "Claudia Gonçalves e Família", "Claudia Moura", "Cristina e Marcel", "Daisy", "Débora e Maurício", "Douglas e Familia", "Edenize e Cláudio", "Edilaneide e Família ", "Elivalda", "Emerson e Andressa", "Eric e Familia", "Fábio e Família  ", "Felipe", "Felipe e Victoria", "Fernanda", "Fernando", "Flavio e Victor", "Geórgia", "Gilberto", "Gisele", "Guilherme e Fernanda", "Heloísa e Isadora", "Hosana e Família", "Isabel", "Ivanete e Família", "Jaqueline e Família", "Joel e Familia", "Jonas e Luana", "Jonathan e Graziele", "Laura e Familia", "Leandro Dorta e Família", "Leandro Santos", "Leandro Scatamburlo e Familia", "Leonilda e Yuri", "Lourdes", "Marcelo e Família", "Marcio e Família", "Marcos Moura e Família", "Marina e Felipe", "Miriam", "Natalia e Thiago", "Nathalia", "Nitay e Ana Paula", "Patrícia", "Paula e Felipe", "Rafael e Alana", "Rafael e Giselle ", "Raimunda e Miguel", "Raisa e Família", "Renata e Cristiano", "Robinson", "Rogério", "Rosicleide e Roger", "Rosicler e Odair", "Ryan e Lais", "Simone e Jorge", "Simone Gonçalves e Família", "Socorro e Família ", "Stefani e Wendel", "Tatiana e Renato", "Thaís e Familia", "Thales e Família", "Thayssa e André", "Thiago e Fabíola ", "Thiago e Família", "Valdir e Sandra", "Vânia e Família", "Vinicius", "Vinicius e Leydjane", "Wanderlei e Família", "Wanderson","Stefani","Lucas e Mayara","Carolina","Saulo","Erivaneide e José Serverino"];
 
   $("#guest_name").autocomplete({
     source: list

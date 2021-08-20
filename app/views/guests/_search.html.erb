@@ -1,15 +1,15 @@
 <% if @guest %>
 <form id="guests_form" role="form" method="post" action="confirmation" class="font-alt">
   <input class="form-control hidden" type="text" id="id" name="id" value="<%= @guest.id %>">
-  <div class="form-group"><label class="sr-only">Nomes/apelidos</label><input class="form-control" type="text" id="full_names" name="full_names" placeholder="Nomes ou apelidos de preferência para marcação" required="required" data-validation-required-message="Por favor informe os nomes." value="<%= @guest.full_names %>"><p class="help-block text-danger"></p></div>
+  <div class="form-group"><label class="sr-only">Nomes/apelidos</label><input class="form-control" type="text" id="full_names" name="full_names" placeholder="Nomes ou apelidos do(s) convidado(s) para brindes" required="required" data-validation-required-message="Por favor informe os nomes." value="<%= @guest.full_names %>"><p class="help-block text-danger"></p></div>
   <div class="form-group"><label class="sr-only">Quantidade</label><input class="form-control" type="number" id="guests" name="guests" placeholder="Quantidade de adultos e crianças" required="required" data-validation-required-message="Por favor informe a quantidade de pessoas." value="<%= @guest.guests %>"><p class="help-block text-danger"></p></div>
   <div class="form-group"><input class="form-control" type="text" id="observation" name="observation" placeholder="Restrições alimentares (alergia, vegano, intolerante)" value="<%= @guest.observation %>"><p class="help-block text-danger"></p></div>
   <% if @guest.lodging > 0 %>
   <div class="text-center"><p>Disponibilizaremos alojamento para algumas pessoas, será dormitório compartilhado em beliches, no domingo haverá rodízio de crepe (com opção vegana) por R$38/pessoa (crianças abaixo de 9 anos não pagam) por favor informar abaixo o interesse:</p></div>
   <% if @guest.lodging == 2 %>
-  <div class="col-sm-4"><div class="text-center"><p>Sexta</p></div><div class="form-group"><input class="form-control" type="checkbox" id="friday" name="friday"></div></div>
+  <div class="col-sm-4"><div class="text-center"><p>Sexta/Sábado</p></div><div class="form-group"><input class="form-control" type="checkbox" id="friday" name="friday"></div></div>
   <% end %>
-  <div class="col-sm-4"><div class="text-center"><p>Domingo</p></div><div class="form-group"><input class="form-control" type="checkbox" id="sunday" name="sunday"></div></div>
+  <div class="col-sm-4"><div class="text-center"><p>Sábado/Domingo</p></div><div class="form-group"><input class="form-control" type="checkbox" id="sunday" name="sunday"></div></div>
   <div class="col-sm-4"><div class="text-center"><p>Crepe</p></div><div class="form-group"><input class="form-control" type="checkbox" id="crepe" name="crepe"></div></div>
   <% if @guest.lodging == 2 %>
   <div class="text-center"><p>Para os convidados que ficarão na sexta, haverá cabeleireiros e maquiadores, favor informar o interesse:</p></div>
