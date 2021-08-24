@@ -17,6 +17,7 @@ class GuestsController < ApplicationController
     @guest = Guest.find params[:id]
     @guest.guests = params[:guests]
     @guest.observation = params[:observation]
+    @guest.vaccine = params[:vaccine]
     @guest.hair_makeup = params[:hair_makeup]
     @guest.full_names = params[:full_names]
     params[:sunday] ? (@guest.sunday = true) : (@guest.sunday = false)
